@@ -4,6 +4,16 @@ Clone this repository.
 
 初期設定
 ------------
+
+Windowsの人はwinnfsdプラグインをインストール
+```bash
+vagrant plugin install vagrant-winnfsd
+```
+docker-composeプラグインをインストール
+```bash
+vagrant plugin install vagrant-docker-compose
+```
+
 ```bash
 cp docker/.env.sample docker/.env
 ```
@@ -38,4 +48,4 @@ cd ~/share/docker
 ```
 
 
-then open [http://docker.cakephp:8080/](http://docker.cakephp:8080/)
+then open [http://docker.cakephp:8080/](http://docker.cakephp:8080/){:target="_blank"}
