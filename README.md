@@ -45,5 +45,6 @@ vagrant ssh
 cd ~/share/docker
 ```
 
+### then open
+http://docker.cakephp:8080
 
-then open [http://docker.cakephp:8080/](http://docker.cakephp:8080/) {:target="_blank"}
