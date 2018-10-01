@@ -7,6 +7,14 @@ Clone this repository.
 ```bash
 cp docker/.env.sample docker/.env
 ```
+Windowsの人はwinnfsdプラグインをインストール
+```bash
+vagrant plugin install vagrant-winnfsd
+```
+docker-composeプラグインをインストール
+```bash
+vagrant plugin install vagrant-docker-compose
+```
 
 cakephpのソースコードを配置
 --------------------------------------
@@ -15,8 +23,8 @@ cakephpのソースコードを配置
 
 cakephpとmysqlを接続
 ----------------------------
-* /path/to/config/app.phpを/path/to/docker/html/app/config/にコピー(元のapp.phpはバックアップをとっておくと良い)  
-もしくは(vagrant up 後)、  
+* /path/to/config/app.phpを/path/to/docker/html/app/config/にコピー  
+もしくは(cakephpのソースコードを配置した場合)vagrant up 後に、  
 * html/app/config/app.php のDBのhostを  
 ```bash
 cd share/docker && docker-compose exec db bash
@@ -37,5 +45,8 @@ vagrant ssh
 cd ~/share/docker
 ```
 
+アクセス
+---------------
+### then open
+http://docker.cakephp:8080
 
-then open [http://docker.cakephp:8080/](http://docker.cakephp:8080/)
