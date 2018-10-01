@@ -15,8 +15,8 @@ cakephpのソースコードを配置
 
 cakephpとmysqlを接続
 ----------------------------
-* /path/to/config/app.phpを/path/to/docker/html/app/config/にコピー
-もしくは(vagrant up 後)、  
+* /path/to/config/app.phpを/path/to/docker/html/app/config/にコピー  
+もしくは(cakephpのソースコードを配置した場合)vagrant up 後に、  
 * html/app/config/app.php のDBのhostを  
 ```bash
 cd share/docker && docker-compose exec db bash
